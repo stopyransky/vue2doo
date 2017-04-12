@@ -10,10 +10,14 @@
     "vue.js",
     "2do"
   ],
+  "repository": "https://github.com/stopyransky/vue2doo.git",
   "author": "Karol Stopyra",
   "license": "MIT",
   "dependencies": {
     "express": "^4.15.2",
     "mongodb": "^2.2.25"
+  },
+  "devDependencies": {
+    "webpack": "^2.3.3"
   }
 }

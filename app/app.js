@@ -1,21 +1,4 @@
- <!DOCTYPE html>
- <html>
- <head>
- 	<meta charset="utf-8">
- 	<title>vue2doo</title>
- 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
- </head>
- <body>
- 	<div id='app'>
- 		<p>{{message}}</p>
- 		<input v-model="message">
- 		<button v-on:click="reverseMessage">Reverse</button>
- 		<ol>
-		  	<todo-item v-for="item in groceryList" :key="item.id" v-bind:todo="item"></todo-item>
-		</ol>
- 	</div>
-	 <script>
-	 	
+
 	 	Vue.component('todo-item', {
 	 		props : ['todo'],
 		  	template: '<li>{{todo.text}}</li>'
@@ -81,7 +64,3 @@
 	 	// app.$data === data
 	 	// 
 	 	
-
-	 </script>
- </body>
- </html>
