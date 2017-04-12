@@ -1,23 +1,11 @@
 
-	 	Vue.component('todo-item', {
-	 		props : ['todo'],
-		  	template: '<li>{{todo.text}}</li>'
-		})
-	 	
 	 	// var  vue = new Vue( options );
-	 	var app = new Vue( {
+	 	var app1 = new Vue( {
 	 		// mounted element
-		  	el: '#app',
+		  	el: '#app-1',
 		 	
 		 	data: {
 		   		message: 'Hello Vue.js!',
-		   		groceryList : [ 
-		   			{ text : "carrots" },
-		   			{ text : "bread" }, 
-		   			{ text : "butter"}, 
-		   			{ text : "eggs" }, 
-		   			{ text : "meat" }
-		   		]
 		  	},
 		  	
 		  	methods: {
@@ -63,4 +51,32 @@
 	 	// app.$el === el
 	 	// app.$data === data
 	 	// 
+	 	var app2 = new Vue( {
+	 		el : "#app-2",
+	 		data : {
+	 			seen : true
+	 		},
+	 		methods : {
+	 			toggleSeen : function() {
+	 				this.seen ^= true;
+	 			}
+	 		}
+	 	});
 	 	
+	 	Vue.component('todo-item', {
+	 		props : ['todo'],
+		  	template: '<li>{{todo.text}}</li>'
+		})
+	 	
+	 	var app3 = new Vue( {
+	 		el : "#app-3",
+	 		data: {
+		   		groceryList : [ 
+		   			{ text : "carrots" },
+		   			{ text : "bread" }, 
+		   			{ text : "butter"}, 
+		   			{ text : "eggs" }, 
+		   			{ text : "meat" }
+		   		]
+		  	},
+	 	});
