@@ -18,14 +18,12 @@
 		  	computed : {},
 		  	//replaces mounted element, except if starts with "#"
 		  	//template : "<h1>hi vue!</h1>",
-		  	
 		  	// LIFECYCLE HOOKS
 		  	// beforeCreate : function() {
 		  	// 	console.log("beforeCreate there was nothing");
 		  	// },
 		  	// created : function() {
 		  	// 	console.log( "and The App was created " + this.message );
-
 		  	// },
 		  	// beforeMount : function() {
 		  	// 	console.log( "beforeMount it was nothing");
@@ -50,7 +48,6 @@
 	 	// $ refs
 	 	// app.$el === el
 	 	// app.$data === data
-	 	// 
 	 	var app2 = new Vue( {
 	 		el : "#app-2",
 	 		data : {

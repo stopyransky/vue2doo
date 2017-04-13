@@ -18,6 +18,7 @@
     "mongodb": "^2.2.25"
   },
   "devDependencies": {
+    "path": "^0.12.7",
     "webpack": "^2.3.3"
   }
 }

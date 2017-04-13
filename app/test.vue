@@ -40,6 +40,6 @@
 
 	<style scoped>
 		todo-item {
-			background-color: #dd0000;
+			background-color: #770000;
 		}
 	</style>
